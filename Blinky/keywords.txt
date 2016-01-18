@@ -1,0 +1,38 @@
+#######################################
+# Syntax Coloring Map For Blinky Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Blinky	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+setCountMode	KEYWORD2
+setAnalogMode	KEYWORD2
+setCount	KEYWORD2
+setInterval	KEYWORD2
+getState	KEYWORD2
+stop	KEYWORD2
+start	KEYWORD2
+isBlinking	KEYWORD2
+forceToggle	KEYWORD2
+forceON	KEYWORD2
+forceOFF	KEYWORD2
+setAnalogValue	KEYWORD2
+update	KEYWORD2
+isFlipped	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+#AUTOMATIC	LITERAL1
+#MANUAL	LITERAL1
+#DIRECT	LITERAL1
+#REVERSE	LITERAL1
