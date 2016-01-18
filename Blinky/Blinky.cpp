@@ -126,10 +126,10 @@ void Blinky::setCount(byte beepCount)
  */
 void Blinky::setInterval(long interval)
 {
+	if(interval <= 0)
+		interval = 0;
 	_interval = interval;
 	_beepOnTime = _interval / 10;
-	_status = false;
-	_pm = 0;
 }
 
 /**

@@ -11,25 +11,20 @@ Blinky myLED;
 void setup() 
 {
 	myLED.init(13);
-	myLED.setInterval(1000);
+	myLED.setInterval(100);
+	myLED.start();
 }
 
-void loop() 
+void loop()
 {
 	int aval = analogRead(A0);
-	
-	if(aval >= 900)
-		myLED.stop();
+
+	if (aval < 255)
+		myLED.setInterval(250);
+	else if (aval < 512)
+		myLED.setInterval(500);
 	else
-	{
-		if (aval < 255)
-			myLED.setInterval(250);
-		else if (aval < 512)
-			myLED.setInterval(500);
-		else
-			myLED.setInterval(1000);
-		myLED.start();
-	}
-	
+		myLED.setInterval(1000);
+
 	myLED.update();
 }

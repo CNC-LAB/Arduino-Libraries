@@ -20,7 +20,7 @@ setInterval	KEYWORD2
 getState	KEYWORD2
 stop	KEYWORD2
 start	KEYWORD2
-isBlinking	KEYWORD2
+isActive	KEYWORD2
 forceToggle	KEYWORD2
 forceON	KEYWORD2
 forceOFF	KEYWORD2
