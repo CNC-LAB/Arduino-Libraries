@@ -1,35 +1,35 @@
-/********************************************************
- * PID Basic Example
- * Reading analog input 0 to control analog PWM output 3
- ********************************************************/
+/**
+ *  \file Blinky_Basic.ino
+ *  \brief 
+ *  This example shows how to use Blinky to blink LED at a certain frequency
+ */
 
-#include <PID_v1.h>
+#include <Blinky\Blinky.h>
 
-#define PIN_INPUT 0
-#define PIN_OUTPUT 3
+Blinky myLED;
 
-//Define Variables we'll be connecting to
-double Setpoint, Input, Output;
-
-//Specify the links and initial tuning parameters
-double Kp=2, Ki=5, Kd=1;
-PID myPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
-
-void setup()
+void setup() 
 {
-  //initialize the variables we're linked to
-  Input = analogRead(PIN_INPUT);
-  Setpoint = 100;
-
-  //turn the PID on
-  myPID.SetMode(AUTOMATIC);
+	myLED.init(13);
+	myLED.setInterval(1000);
 }
 
-void loop()
+void loop() 
 {
-  Input = analogRead(PIN_INPUT);
-  myPID.Compute();
-  analogWrite(PIN_OUTPUT, Output);
+	int aval = analogRead(A0);
+	
+	if(aval >= 900)
+		myLED.stop();
+	else
+	{
+		if (aval < 255)
+			myLED.setInterval(250);
+		else if (aval < 512)
+			myLED.setInterval(500);
+		else
+			myLED.setInterval(1000);
+		myLED.start();
+	}
+	
+	myLED.update();
 }
-
-
