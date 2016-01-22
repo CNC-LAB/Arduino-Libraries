@@ -1,0 +1,8 @@
+Vector	KEYWORD1
+
+init	KEYWORD2
+buffer	KEYWORD2
+length	KEYWORD2
+tag	KEYWORD2
+Clear	KEYWORD2
+Clone	KEYWORD2

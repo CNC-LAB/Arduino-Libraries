@@ -1,0 +1,19 @@
+{
+  "name": "Vector",
+  "keywords": "array, vector, bytes, data, communication",
+  "description": "This library provides a Vector class for easier byte array manipulation and passing to other functions as input parameter.",
+  "url": "http://www.cnclablb.com",
+  "include": "Vector",
+  "authors":
+  [
+    {
+      "name": "CNC LAB"
+    }
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/CNC-LAB/Arduino-Libraries.git"
+  },
+  "frameworks": "arduino"
+}
