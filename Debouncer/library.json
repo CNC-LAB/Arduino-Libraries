@@ -1,9 +1,9 @@
 {
-  "name": "Blinky",
-  "keywords": "Blink, LED",
-  "description": "The Blinky library provides easy blinking LED timing management suitable for error codes and other user interfacing purposes.",
+  "name": "Debouncer",
+  "keywords": "Debounce, conditioning, signal",
+  "description": "This library provides a simple debouncing routine suitable for any boolean value debouncing purposes.",
   "url": "http://www.cnclablb.com",
-  "include": "Blinky",
+  "include": "Debouncer",
   "authors":
   [
     {
