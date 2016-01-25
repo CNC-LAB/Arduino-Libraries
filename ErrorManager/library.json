@@ -1,0 +1,19 @@
+{
+  "name": "ErrorManager",
+  "keywords": "error, code, user interface",
+  "description": "This library provides a simple error management class suitable for all UI applications.",
+  "url": "http://www.cnclablb.com",
+  "include": "ErrorManager",
+  "authors":
+  [
+    {
+      "name": "CNC LAB"
+    }
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/CNC-LAB/Arduino-Libraries.git"
+  },
+  "frameworks": "arduino"
+}

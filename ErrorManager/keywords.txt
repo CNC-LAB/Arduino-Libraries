@@ -1,0 +1,9 @@
+ErrorManager	KEYWORD1
+
+setError	KEYWORD2
+getError	KEYWORD2
+init	KEYWORD2
+clearError	KEYWORD2
+getErrorCode	KEYWORD2
+clearAll	KEYWORD2
+
