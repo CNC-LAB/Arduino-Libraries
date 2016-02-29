@@ -2,7 +2,7 @@
 /*! 
   @file     Debouncer.h
   @author   CNC LAB (Rami Nassouh for CNC LAB)
-  @license  BSD (see license.txt) 
+  @license  GPLv3 (see license.txt) 
 
   This library provides a simple debouncing routine suitable for any boolean value debouncing purposes
   ----> https://www.cnclablb.com
@@ -28,16 +28,14 @@
 
 class Debouncer
 {
-	public:
-		Debouncer(long interval);
-		bool debounce(bool currentValue);
-		
-	private:
-		long pm;
-		long timeout_interval;
-		bool previous_value;
+  public:
+    Debouncer(long interval);
+	bool debounce(bool currentValue);
+	
+  private:
+	long pm;
+	long timeout_interval;
+	bool previous_value;
 };
-
-
 
 #endif
